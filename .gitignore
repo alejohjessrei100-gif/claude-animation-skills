@@ -20,3 +20,5 @@ reels/*/st2/
 reels/*/st3/
 reels/*/parts/
 reels/*/node_modules
+reels/*/web/build/app.min.js
+reels/*/web/build/comet-reel.html

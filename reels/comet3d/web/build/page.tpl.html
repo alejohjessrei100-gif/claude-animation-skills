@@ -1,0 +1,77 @@
+<title>Comet Window Reel</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* layout: the 9:16 reel as the hero, a slim control column beside it (stacked under it on phones) */
+:root {
+  --bg: #0b1220; --panel: #121c30; --line: #24324f; --fg: #e8eef8; --muted: #93a3bf;
+  --accent: #ffc21a; --sky: #3b8cff;
+  --display: Montserrat, "Arial Black", system-ui, sans-serif;
+  --body: Montserrat, system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 16px; box-sizing: border-box; }
+.wrap { display: flex; gap: 28px; align-items: flex-start; justify-content: center; max-width: 980px; margin: 0 auto; }
+.reel { flex: 0 1 auto; min-width: 0; }
+#screen { display: block; height: min(78vh, 900px); max-width: 100%; aspect-ratio: 9 / 16; width: auto; border-radius: 18px; background: #000; box-shadow: 0 0 0 1px var(--line), 0 20px 60px rgba(0,0,0,.5); }
+.side { flex: 1 1 300px; max-width: 360px; min-width: 0; display: flex; flex-direction: column; gap: 18px; padding-top: 8px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: 26px; line-height: 1.15; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
+p { margin: 0; color: var(--muted); }
+.btns { display: flex; gap: 10px; flex-wrap: wrap; }
+button { font: 700 15px var(--body); border: 0; border-radius: 12px; padding: 13px 20px; cursor: pointer; }
+button:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+button:disabled { opacity: .45; cursor: default; }
+#play { background: var(--fg); color: var(--bg); }
+#make, #save { background: var(--accent); color: #1a1405; }
+.meter { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+#bar { height: 100%; width: 0; background: var(--accent); transition: width .15s linear; }
+.row { display: flex; justify-content: space-between; gap: 12px; font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+#status { font-size: 13px; color: var(--fg); min-height: 2.6em; }
+#result[hidden] { display: none; }
+#result { display: flex; flex-direction: column; gap: 10px; }
+#video { width: 160px; max-width: 100%; aspect-ratio: 9 / 16; border-radius: 10px; background: #000; }
+.facts { border-top: 1px solid var(--line); padding-top: 14px; font-size: 13px; display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; }
+.facts dt { font-family: var(--mono); color: var(--muted); font-size: 12px; }
+.facts dd { margin: 0; }
+@media (max-width: 700px) {
+  .wrap { flex-direction: column; align-items: center; gap: 18px; }
+  #screen { height: auto; width: 100%; max-height: 72vh; width: min(100%, calc(72vh * 9 / 16)); }
+  .side { max-width: 480px; width: 100%; padding-top: 0; }
+}
+@media (prefers-reduced-motion: reduce) { #bar { transition: none; } }
+</style>
+<div class="wrap">
+  <div class="reel"><canvas id="screen" aria-label="Reel preview"></canvas></div>
+  <div class="side">
+    <div>
+      <p class="eyebrow">3D explainer · 9:16 · 37 s</p>
+      <h1>What if one sharp corner could tear a jet in half?</h1>
+    </div>
+    <p>The whole reel is drawn here with WebGL, on your own device. Play it live, or make an MP4: every frame is rendered at full quality and encoded on the phone, sound included.</p>
+    <div class="btns">
+      <button id="play" type="button">Play</button>
+      <button id="make" type="button">Make MP4</button>
+    </div>
+    <div>
+      <div class="meter"><div id="bar"></div></div>
+      <div class="row"><span id="time">0:00 / 0:37</span><span>720 × 1280 · 30 fps</span></div>
+    </div>
+    <div id="status" role="status" aria-live="polite">Starting the 3D engine…</div>
+    <div id="result" hidden>
+      <video id="video" controls playsinline></video>
+      <div class="btns"><button id="save" type="button">Save MP4</button></div>
+    </div>
+    <dl class="facts">
+      <dt>Story</dt><dd>De Havilland Comet, 1952 to 1954</dd>
+      <dt>Frames</dt><dd>1,116, at 30 per second</dd>
+      <dt>Keep open</dt><dd>Leave this screen on while the MP4 renders</dd>
+    </dl>
+  </div>
+</div>
+<script type="text/plain" id="mix">__MIX__</script>
+<script type="module">__APP__</script>
