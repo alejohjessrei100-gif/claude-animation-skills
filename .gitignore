@@ -16,3 +16,7 @@ reels/*/stills/
 reels/*/silent.mp4
 reels/*/*.mp4
 reels/*/audio/mix.wav
+reels/*/st2/
+reels/*/st3/
+reels/*/parts/
+reels/*/node_modules
