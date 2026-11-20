@@ -1,0 +1,592 @@
+[
+ {
+  "word": "Mr.",
+  "start": 0.05,
+  "end": 0.266
+ },
+ {
+  "word": "Black",
+  "start": 0.64,
+  "end": 0.876
+ },
+ {
+  "word": "dunks",
+  "start": 0.902,
+  "end": 1.138
+ },
+ {
+  "word": "his",
+  "start": 1.164,
+  "end": 1.38
+ },
+ {
+  "word": "hand",
+  "start": 1.404,
+  "end": 1.63
+ },
+ {
+  "word": "in",
+  "start": 1.655,
+  "end": 1.862
+ },
+ {
+  "word": "ice",
+  "start": 1.885,
+  "end": 2.091
+ },
+ {
+  "word": "water",
+  "start": 2.114,
+  "end": 2.463
+ },
+ {
+  "word": "for",
+  "start": 2.501,
+  "end": 2.717
+ },
+ {
+  "word": "sixty",
+  "start": 2.741,
+  "end": 3.09
+ },
+ {
+  "word": "seconds,",
+  "start": 3.129,
+  "end": 3.497
+ },
+ {
+  "word": "by",
+  "start": 3.688,
+  "end": 3.895
+ },
+ {
+  "word": "the",
+  "start": 3.918,
+  "end": 4.134
+ },
+ {
+  "word": "way.",
+  "start": 4.158,
+  "end": 4.364
+ },
+ {
+  "word": "Then",
+  "start": 4.737,
+  "end": 4.963
+ },
+ {
+  "word": "he",
+  "start": 4.988,
+  "end": 5.194
+ },
+ {
+  "word": "does",
+  "start": 5.217,
+  "end": 5.433
+ },
+ {
+  "word": "it",
+  "start": 5.457,
+  "end": 5.664
+ },
+ {
+  "word": "again,",
+  "start": 5.687,
+  "end": 6.026
+ },
+ {
+  "word": "but",
+  "start": 6.213,
+  "end": 6.429
+ },
+ {
+  "word": "they",
+  "start": 6.453,
+  "end": 6.67
+ },
+ {
+  "word": "leave",
+  "start": 6.694,
+  "end": 6.91
+ },
+ {
+  "word": "him",
+  "start": 6.934,
+  "end": 7.15
+ },
+ {
+  "word": "thirty",
+  "start": 7.174,
+  "end": 7.532
+ },
+ {
+  "word": "seconds",
+  "start": 7.572,
+  "end": 7.941
+ },
+ {
+  "word": "longer",
+  "start": 7.982,
+  "end": 8.34
+ },
+ {
+  "word": "while",
+  "start": 8.38,
+  "end": 8.729
+ },
+ {
+  "word": "the",
+  "start": 8.768,
+  "end": 8.984
+ },
+ {
+  "word": "water",
+  "start": 9.008,
+  "end": 9.357
+ },
+ {
+  "word": "warms",
+  "start": 9.395,
+  "end": 9.631
+ },
+ {
+  "word": "a",
+  "start": 9.657,
+  "end": 9.854
+ },
+ {
+  "word": "little.",
+  "start": 9.876,
+  "end": 10.234
+ },
+ {
+  "word": "He",
+  "start": 10.624,
+  "end": 10.83
+ },
+ {
+  "word": "picks",
+  "start": 10.853,
+  "end": 11.089
+ },
+ {
+  "word": "the",
+  "start": 11.115,
+  "end": 11.331
+ },
+ {
+  "word": "longer",
+  "start": 11.355,
+  "end": 11.714
+ },
+ {
+  "word": "one",
+  "start": 11.754,
+  "end": 11.96
+ },
+ {
+  "word": "to",
+  "start": 11.983,
+  "end": 12.189
+ },
+ {
+  "word": "repeat,",
+  "start": 12.212,
+  "end": 12.561
+ },
+ {
+  "word": "by",
+  "start": 12.75,
+  "end": 12.956
+ },
+ {
+  "word": "the",
+  "start": 12.979,
+  "end": 13.195
+ },
+ {
+  "word": "way.",
+  "start": 13.219,
+  "end": 13.426
+ },
+ {
+  "word": "You",
+  "start": 13.798,
+  "end": 13.995
+ },
+ {
+  "word": "see,",
+  "start": 14.017,
+  "end": 14.223
+ },
+ {
+  "word": "your",
+  "start": 14.396,
+  "end": 14.602
+ },
+ {
+  "word": "brain",
+  "start": 14.625,
+  "end": 14.851
+ },
+ {
+  "word": "grades",
+  "start": 14.876,
+  "end": 15.235
+ },
+ {
+  "word": "a",
+  "start": 15.275,
+  "end": 15.471
+ },
+ {
+  "word": "memory",
+  "start": 15.493,
+  "end": 15.965
+ },
+ {
+  "word": "by",
+  "start": 16.017,
+  "end": 16.223
+ },
+ {
+  "word": "its",
+  "start": 16.246,
+  "end": 16.462
+ },
+ {
+  "word": "worst",
+  "start": 16.486,
+  "end": 16.722
+ },
+ {
+  "word": "moment",
+  "start": 16.748,
+  "end": 17.107
+ },
+ {
+  "word": "and",
+  "start": 17.147,
+  "end": 17.363
+ },
+ {
+  "word": "its",
+  "start": 17.387,
+  "end": 17.603
+ },
+ {
+  "word": "ending.",
+  "start": 17.627,
+  "end": 17.986
+ },
+ {
+  "word": "Ever",
+  "start": 18.376,
+  "end": 18.715
+ },
+ {
+  "word": "hate",
+  "start": 18.752,
+  "end": 18.968
+ },
+ {
+  "word": "a",
+  "start": 18.992,
+  "end": 19.189
+ },
+ {
+  "word": "whole",
+  "start": 19.211,
+  "end": 19.559
+ },
+ {
+  "word": "movie,",
+  "start": 19.598,
+  "end": 19.814
+ },
+ {
+  "word": "then",
+  "start": 19.988,
+  "end": 20.214
+ },
+ {
+  "word": "forgive",
+  "start": 20.239,
+  "end": 20.598
+ },
+ {
+  "word": "it",
+  "start": 20.638,
+  "end": 20.844
+ },
+ {
+  "word": "because",
+  "start": 20.867,
+  "end": 21.216
+ },
+ {
+  "word": "the",
+  "start": 21.255,
+  "end": 21.471
+ },
+ {
+  "word": "ending",
+  "start": 21.495,
+  "end": 21.853
+ },
+ {
+  "word": "was",
+  "start": 21.893,
+  "end": 22.109
+ },
+ {
+  "word": "perfect,",
+  "start": 22.133,
+  "end": 22.502
+ },
+ {
+  "word": "by",
+  "start": 22.693,
+  "end": 22.899
+ },
+ {
+  "word": "the",
+  "start": 22.922,
+  "end": 23.138
+ },
+ {
+  "word": "way?",
+  "start": 23.162,
+  "end": 23.368
+ },
+ {
+  "word": "Kahneman's",
+  "start": 23.741,
+  "end": 24.242
+ },
+ {
+  "word": "team",
+  "start": 24.298,
+  "end": 24.514
+ },
+ {
+  "word": "ran",
+  "start": 24.538,
+  "end": 24.754
+ },
+ {
+  "word": "this",
+  "start": 24.778,
+  "end": 25.004
+ },
+ {
+  "word": "cold-water",
+  "start": 25.029,
+  "end": 25.53
+ },
+ {
+  "word": "test",
+  "start": 25.586,
+  "end": 25.812
+ },
+ {
+  "word": "in",
+  "start": 25.837,
+  "end": 26.044
+ },
+ {
+  "word": "1993.",
+  "start": 26.066,
+  "end": 26.926
+ },
+ {
+  "word": "Same",
+  "start": 27.372,
+  "end": 27.588
+ },
+ {
+  "word": "person,",
+  "start": 27.612,
+  "end": 27.97
+ },
+ {
+  "word": "same",
+  "start": 28.16,
+  "end": 28.376
+ },
+ {
+  "word": "ice,",
+  "start": 28.4,
+  "end": 28.607
+ },
+ {
+  "word": "different",
+  "start": 28.78,
+  "end": 29.281
+ },
+ {
+  "word": "ending.",
+  "start": 29.336,
+  "end": 29.695
+ },
+ {
+  "word": "It's",
+  "start": 30.085,
+  "end": 30.301
+ },
+ {
+  "word": "called",
+  "start": 30.325,
+  "end": 30.561
+ },
+ {
+  "word": "the",
+  "start": 30.587,
+  "end": 30.803
+ },
+ {
+  "word": "peak-end",
+  "start": 30.827,
+  "end": 31.186
+ },
+ {
+  "word": "rule,",
+  "start": 31.225,
+  "end": 31.564
+ },
+ {
+  "word": "by",
+  "start": 31.752,
+  "end": 31.958
+ },
+ {
+  "word": "the",
+  "start": 31.981,
+  "end": 32.197
+ },
+ {
+  "word": "way.",
+  "start": 32.221,
+  "end": 32.428
+ },
+ {
+  "word": "Longer",
+  "start": 32.801,
+  "end": 33.159
+ },
+ {
+  "word": "pain,",
+  "start": 33.199,
+  "end": 33.415
+ },
+ {
+  "word": "remembered",
+  "start": 33.589,
+  "end": 34.09
+ },
+ {
+  "word": "as",
+  "start": 34.146,
+  "end": 34.352
+ },
+ {
+  "word": "kinder.",
+  "start": 34.375,
+  "end": 34.734
+ },
+ {
+  "word": "So",
+  "start": 35.124,
+  "end": 35.33
+ },
+ {
+  "word": "end",
+  "start": 35.353,
+  "end": 35.569
+ },
+ {
+  "word": "every",
+  "start": 35.593,
+  "end": 36.055
+ },
+ {
+  "word": "hard",
+  "start": 36.106,
+  "end": 36.332
+ },
+ {
+  "word": "thing",
+  "start": 36.357,
+  "end": 36.593
+ },
+ {
+  "word": "on",
+  "start": 36.619,
+  "end": 36.825
+ },
+ {
+  "word": "something",
+  "start": 36.848,
+  "end": 37.349
+ },
+ {
+  "word": "good,",
+  "start": 37.405,
+  "end": 37.621
+ },
+ {
+  "word": "like",
+  "start": 37.795,
+  "end": 38.011
+ },
+ {
+  "word": "a",
+  "start": 38.035,
+  "end": 38.232
+ },
+ {
+  "word": "workout,",
+  "start": 38.254,
+  "end": 38.612
+ },
+ {
+  "word": "a",
+  "start": 38.802,
+  "end": 38.999
+ },
+ {
+  "word": "meeting,",
+  "start": 39.02,
+  "end": 39.379
+ },
+ {
+  "word": "even",
+  "start": 39.569,
+  "end": 39.908
+ },
+ {
+  "word": "a",
+  "start": 39.946,
+  "end": 40.142
+ },
+ {
+  "word": "goodbye,",
+  "start": 40.164,
+  "end": 40.513
+ },
+ {
+  "word": "by",
+  "start": 40.701,
+  "end": 40.908
+ },
+ {
+  "word": "the",
+  "start": 40.931,
+  "end": 41.147
+ },
+ {
+  "word": "way.",
+  "start": 41.171,
+  "end": 41.377
+ }
+]

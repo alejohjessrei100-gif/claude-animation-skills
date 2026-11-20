@@ -1,0 +1,231 @@
+{
+ "title": "Peak-end rule (brand demo)",
+ "fps": 30,
+ "end_pad": 0.62,
+ "lowercase": true,
+ "_words": "0 Mr. 1 Black 2 dunks 3 his 4 hand 5 in 6 ice 7 water 8 for 9 sixty 10 seconds, 11 by 12 the 13 way. | 14 Then ... 31 little. | 32 He picks ... 41 way. | 42 You see, ... 55 ending. | 56 Ever hate ... 71 way? | 72 Kahneman's ... 79 1993. | 80 Same ... 85 ending. | 86 It's called ... 93 way. | 94 Longer ... 98 kinder. | 99 So end ... 117 way.",
+ "scenes": [
+  {
+   "id": "hook",
+   "start_word": 0,
+   "set": "study",
+   "mood": "night",
+   "cast": [
+    {
+     "id": "mrb",
+     "type": "host",
+     "x": 560,
+     "y": 1560,
+     "scale": 1.15,
+     "z": 1.0,
+     "face": 0.2,
+     "pose": "stand",
+     "expr": "deadpan"
+    }
+   ],
+   "keys": [
+    {
+     "w": 0,
+     "frame": [
+      130,
+      1330,
+      700
+     ]
+    },
+    {
+     "w": 2,
+     "frame": "mrb"
+    },
+    {
+     "w": 14,
+     "frame": "mrb:face"
+    },
+    {
+     "w": 22,
+     "frame": "wide"
+    },
+    {
+     "w": 32,
+     "frame": "mrb:face"
+    }
+   ],
+   "acts": [
+    {
+     "w": 8,
+     "who": "mrb",
+     "pose": "point",
+     "expr": "scared"
+    },
+    {
+     "w": 14,
+     "who": "mrb",
+     "pose": "stand",
+     "expr": "deadpan"
+    },
+    {
+     "w": 33,
+     "who": "mrb",
+     "pose": "shrug",
+     "expr": "smug"
+    }
+   ]
+  },
+  {
+   "id": "explain",
+   "start_word": 42,
+   "set": "diner",
+   "mood": "golden",
+   "calm": true,
+   "bloom": 0.6,
+   "cast": [
+    {
+     "id": "mrb",
+     "type": "host",
+     "x": 540,
+     "y": 1560,
+     "scale": 1.1,
+     "z": 1.0,
+     "face": 0.2,
+     "pose": "hips",
+     "expr": "smug",
+     "talk": false
+    }
+   ],
+   "keys": [
+    {
+     "w": 42,
+     "frame": [
+      230,
+      1300,
+      700
+     ]
+    },
+    {
+     "w": 46,
+     "frame": [
+      540,
+      1000,
+      1100
+     ]
+    },
+    {
+     "w": 56,
+     "frame": "mrb:face"
+    },
+    {
+     "w": 62,
+     "frame": "wide"
+    }
+   ],
+   "acts": [
+    {
+     "w": 56,
+     "who": "mrb",
+     "expr": "sad"
+    },
+    {
+     "w": 66,
+     "who": "mrb",
+     "expr": "happy",
+     "pose": "cheer"
+    }
+   ]
+  },
+  {
+   "id": "name",
+   "start_word": 72,
+   "set": "rooftop",
+   "mood": "sunset",
+   "cast": [
+    {
+     "id": "mrb",
+     "type": "host",
+     "x": 420,
+     "y": 1720,
+     "scale": 1.15,
+     "z": 1.0,
+     "face": 0.3,
+     "pose": "stand",
+     "expr": "smug"
+    }
+   ],
+   "keys": [
+    {
+     "w": 72,
+     "frame": [
+      780,
+      1000,
+      1300
+     ]
+    },
+    {
+     "w": 80,
+     "frame": "mrb"
+    },
+    {
+     "w": 86,
+     "frame": "mrb:face"
+    },
+    {
+     "w": 94,
+     "frame": "wide"
+    }
+   ],
+   "acts": [
+    {
+     "w": 86,
+     "who": "mrb",
+     "x": 640,
+     "dur": 2.4
+    },
+    {
+     "w": 90,
+     "who": "mrb",
+     "pose": "point"
+    }
+   ]
+  },
+  {
+   "id": "ending",
+   "start_word": 99,
+   "set": "study",
+   "mood": "dawn",
+   "calm": true,
+   "cast": [
+    {
+     "id": "mrb",
+     "type": "host",
+     "x": 560,
+     "y": 1560,
+     "scale": 1.15,
+     "z": 1.0,
+     "face": -0.2,
+     "pose": "stand",
+     "expr": "happy"
+    }
+   ],
+   "keys": [
+    {
+     "w": 99,
+     "frame": "wide"
+    },
+    {
+     "w": 108,
+     "frame": "mrb"
+    },
+    {
+     "w": 114,
+     "frame": "mrb:face"
+    }
+   ],
+   "acts": [
+    {
+     "w": 112,
+     "who": "mrb",
+     "pose": "cheer",
+     "expr": "laughing"
+    }
+   ]
+  }
+ ]
+}
