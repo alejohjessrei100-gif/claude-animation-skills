@@ -15,8 +15,9 @@ Montserrat ExtraBold (OFL), lowercase, 1-2 words, `toon2d/text.py`.
 | `study` | teal wallpaper, bookshelf, red-string evidence board, window onto the city, banker's lamp (glows at night) | y 1500-1700, z 1.0 (desk hides the legs when y < 1700) |
 | `rooftop` | layered city skyline, red beacon tower, water tower, vents, access door lamp, gravel roof, parapet | y 1600-1800, z 1.0 |
 | `diner` | neon OPEN window, menu board, red booths, pie case, counter with stools | y 1500-1700, z 1.0 |
+| `home_kitchen` | cream wallpaper, white tile backsplash, teal cabinets, window, fridge with notes, crimson pendant lamp, counter with crimson kettle, toaster, fruit bowl and a key | y 1500-1700, z 1.0 |
 
-Suggested light per set: `study` night (tension) or dawn (ending), `diner` golden (explanation), `rooftop` sunset (name of the effect).
+Suggested light per set: `study` night (tension) or dawn (ending), `home_kitchen` interior (or golden for the explanation), `diner` golden (explanation), `rooftop` sunset (name of the effect).
 To add a set: write `def myset(mood): return [(name, plane_z, painter, opts), ...], meta` in `brandsets.py` and add it to
 `REGISTRY` there.
 
@@ -27,4 +28,5 @@ sentence, by the way ...). It makes the narrator sound casual about odd facts. R
 * Never two "by the way" in a row, never three sentences without one.
 * The hook and the final line both end with it, as a callback.
 * Counts toward the word budget (110-130 words).
-Example: `examples/brand_demo/script.txt` (Path B, peak-end rule).
+Example: `examples/brand_demo/script.txt` (Path B, peak-end rule). `examples/doorway_demo` is the same idea without it.
+Note: `"mrb"` / `"mrb:face"` frames use the actor's start position, so in a scene where he walks in, use fixed `[cx, cy, h]` frames instead.

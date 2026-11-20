@@ -1,0 +1,289 @@
+{
+ "title": "Doorway effect (brand demo)",
+ "fps": 30,
+ "end_pad": 0.64,
+ "lowercase": true,
+ "_words": "0 Mr. ... 12 freezes. | 13 He has no idea ... 19 came. | 20 He checks ... 27 sky. | 28 He walks back ... 37 key. | 38 You see, ... 53 file. | 54 Ever walk ... 61 why? | 62 Researchers ... 83 room. | 84 It's called ... 88 effect. | 89 Your brain ... 98 chapter. | 99 So next time ... 111 began.",
+ "scenes": [
+  {
+   "id": "leave",
+   "start_word": 0,
+   "set": "study",
+   "mood": "night",
+   "cast": [
+    {
+     "id": "mrb",
+     "type": "host",
+     "x": 560,
+     "y": 1560,
+     "scale": 1.15,
+     "z": 1.0,
+     "face": 0.2,
+     "pose": "stand",
+     "expr": "neutral"
+    }
+   ],
+   "keys": [
+    {
+     "w": 0,
+     "frame": [
+      130,
+      1330,
+      700
+     ]
+    },
+    {
+     "w": 2,
+     "frame": "mrb"
+    },
+    {
+     "w": 7,
+     "frame": "wide"
+    }
+   ],
+   "acts": [
+    {
+     "w": 7,
+     "who": "mrb",
+     "x": 1350,
+     "dur": 1.6
+    }
+   ]
+  },
+  {
+   "id": "freeze",
+   "start_word": 12,
+   "set": "home_kitchen",
+   "mood": "interior",
+   "cast": [
+    {
+     "id": "mrb",
+     "type": "host",
+     "x": -60,
+     "y": 1560,
+     "scale": 1.15,
+     "z": 1.0,
+     "face": 0.2,
+     "pose": "stand",
+     "expr": "neutral"
+    }
+   ],
+   "keys": [
+    {
+     "w": 12,
+     "frame": "wide"
+    },
+    {
+     "w": 13,
+     "frame": [
+      560,
+      1280,
+      900
+     ]
+    },
+    {
+     "w": 20,
+     "frame": [
+      560,
+      1250,
+      1200
+     ]
+    },
+    {
+     "w": 24,
+     "frame": [
+      560,
+      1280,
+      760
+     ]
+    }
+   ],
+   "acts": [
+    {
+     "w": 12,
+     "who": "mrb",
+     "x": 560,
+     "dur": 1.0
+    },
+    {
+     "w": 13,
+     "who": "mrb",
+     "expr": "shocked"
+    },
+    {
+     "w": 20,
+     "who": "mrb",
+     "pose": "shrug",
+     "expr": "scared"
+    },
+    {
+     "w": 24,
+     "who": "mrb",
+     "pose": "point",
+     "expr": "deadpan"
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "start_word": 28,
+   "set": "study",
+   "mood": "night",
+   "cast": [
+    {
+     "id": "mrb",
+     "type": "host",
+     "x": 1200,
+     "y": 1560,
+     "scale": 1.15,
+     "z": 1.0,
+     "face": -0.2,
+     "pose": "stand",
+     "expr": "neutral",
+     "dir": -1
+    }
+   ],
+   "keys": [
+    {
+     "w": 28,
+     "frame": "wide"
+    },
+    {
+     "w": 31,
+     "frame": [
+      560,
+      1300,
+      1100
+     ]
+    },
+    {
+     "w": 35,
+     "frame": [
+      560,
+      1290,
+      780
+     ]
+    }
+   ],
+   "acts": [
+    {
+     "w": 28,
+     "who": "mrb",
+     "x": 560,
+     "dur": 1.6
+    },
+    {
+     "w": 35,
+     "who": "mrb",
+     "expr": "happy",
+     "pose": "cheer"
+    }
+   ]
+  },
+  {
+   "id": "explain",
+   "start_word": 38,
+   "set": "home_kitchen",
+   "mood": "golden",
+   "calm": true,
+   "bloom": 0.6,
+   "cast": [
+    {
+     "id": "mrb",
+     "type": "host",
+     "x": 560,
+     "y": 1560,
+     "scale": 1.15,
+     "z": 1.0,
+     "face": 0.2,
+     "pose": "hips",
+     "expr": "smug"
+    }
+   ],
+   "keys": [
+    {
+     "w": 38,
+     "frame": [
+      900,
+      1300,
+      700
+     ]
+    },
+    {
+     "w": 44,
+     "frame": [
+      540,
+      900,
+      1100
+     ]
+    },
+    {
+     "w": 54,
+     "frame": "mrb:face"
+    },
+    {
+     "w": 58,
+     "frame": "wide"
+    }
+   ]
+  },
+  {
+   "id": "study",
+   "start_word": 62,
+   "set": "study",
+   "mood": "dawn",
+   "calm": true,
+   "cast": [
+    {
+     "id": "mrb",
+     "type": "host",
+     "x": 560,
+     "y": 1560,
+     "scale": 1.15,
+     "z": 1.0,
+     "face": 0.2,
+     "pose": "stand",
+     "expr": "smug"
+    }
+   ],
+   "keys": [
+    {
+     "w": 62,
+     "frame": [
+      420,
+      900,
+      1000
+     ]
+    },
+    {
+     "w": 70,
+     "frame": "mrb"
+    },
+    {
+     "w": 84,
+     "frame": "mrb:face"
+    },
+    {
+     "w": 90,
+     "frame": "wide"
+    },
+    {
+     "w": 105,
+     "frame": "mrb"
+    },
+    {
+     "w": 109,
+     "frame": "mrb:face"
+    }
+   ],
+   "acts": [
+    {
+     "w": 105,
+     "who": "mrb",
+     "pose": "point",
+     "expr": "happy"
+    }
+   ]
+  }
+ ]
+}

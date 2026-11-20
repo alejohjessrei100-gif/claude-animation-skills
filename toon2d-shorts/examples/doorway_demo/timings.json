@@ -1,0 +1,562 @@
+[
+ {
+  "word": "Mr.",
+  "start": 0.05,
+  "end": 0.276
+ },
+ {
+  "word": "Black",
+  "start": 0.651,
+  "end": 0.898
+ },
+ {
+  "word": "stands",
+  "start": 0.926,
+  "end": 1.183
+ },
+ {
+  "word": "up",
+  "start": 1.212,
+  "end": 1.428
+ },
+ {
+  "word": "from",
+  "start": 1.452,
+  "end": 1.688
+ },
+ {
+  "word": "his",
+  "start": 1.715,
+  "end": 1.941
+ },
+ {
+  "word": "desk,",
+  "start": 1.966,
+  "end": 2.203
+ },
+ {
+  "word": "walks",
+  "start": 2.379,
+  "end": 2.626
+ },
+ {
+  "word": "to",
+  "start": 2.653,
+  "end": 2.869
+ },
+ {
+  "word": "the",
+  "start": 2.893,
+  "end": 3.12
+ },
+ {
+  "word": "kitchen,",
+  "start": 3.145,
+  "end": 3.531
+ },
+ {
+  "word": "and",
+  "start": 3.723,
+  "end": 3.95
+ },
+ {
+  "word": "freezes.",
+  "start": 3.975,
+  "end": 4.35
+ },
+ {
+  "word": "He",
+  "start": 4.742,
+  "end": 4.958
+ },
+ {
+  "word": "has",
+  "start": 4.982,
+  "end": 5.209
+ },
+ {
+  "word": "no",
+  "start": 5.234,
+  "end": 5.45
+ },
+ {
+  "word": "idea",
+  "start": 5.474,
+  "end": 5.818
+ },
+ {
+  "word": "why",
+  "start": 5.857,
+  "end": 6.083
+ },
+ {
+  "word": "he",
+  "start": 6.108,
+  "end": 6.324
+ },
+ {
+  "word": "came.",
+  "start": 6.348,
+  "end": 6.575
+ },
+ {
+  "word": "He",
+  "start": 6.95,
+  "end": 7.166
+ },
+ {
+  "word": "checks",
+  "start": 7.19,
+  "end": 7.447
+ },
+ {
+  "word": "his",
+  "start": 7.476,
+  "end": 7.702
+ },
+ {
+  "word": "pockets.",
+  "start": 7.727,
+  "end": 8.113
+ },
+ {
+  "word": "He",
+  "start": 8.506,
+  "end": 8.722
+ },
+ {
+  "word": "checks",
+  "start": 8.746,
+  "end": 9.003
+ },
+ {
+  "word": "the",
+  "start": 9.032,
+  "end": 9.258
+ },
+ {
+  "word": "sky.",
+  "start": 9.283,
+  "end": 9.509
+ },
+ {
+  "word": "He",
+  "start": 9.884,
+  "end": 10.101
+ },
+ {
+  "word": "walks",
+  "start": 10.125,
+  "end": 10.371
+ },
+ {
+  "word": "back,",
+  "start": 10.399,
+  "end": 10.636
+ },
+ {
+  "word": "sits",
+  "start": 10.812,
+  "end": 11.048
+ },
+ {
+  "word": "down,",
+  "start": 11.075,
+  "end": 11.311
+ },
+ {
+  "word": "and",
+  "start": 11.488,
+  "end": 11.714
+ },
+ {
+  "word": "instantly",
+  "start": 11.739,
+  "end": 12.264
+ },
+ {
+  "word": "remembers:",
+  "start": 12.322,
+  "end": 12.847
+ },
+ {
+  "word": "the",
+  "start": 13.055,
+  "end": 13.281
+ },
+ {
+  "word": "key.",
+  "start": 13.307,
+  "end": 13.523
+ },
+ {
+  "word": "You",
+  "start": 13.897,
+  "end": 14.102
+ },
+ {
+  "word": "see,",
+  "start": 14.125,
+  "end": 14.341
+ },
+ {
+  "word": "your",
+  "start": 14.515,
+  "end": 14.731
+ },
+ {
+  "word": "brain",
+  "start": 14.755,
+  "end": 14.992
+ },
+ {
+  "word": "files",
+  "start": 15.018,
+  "end": 15.383
+ },
+ {
+  "word": "memories",
+  "start": 15.424,
+  "end": 15.928
+ },
+ {
+  "word": "by",
+  "start": 15.984,
+  "end": 16.2
+ },
+ {
+  "word": "room,",
+  "start": 16.224,
+  "end": 16.451
+ },
+ {
+  "word": "and",
+  "start": 16.626,
+  "end": 16.852
+ },
+ {
+  "word": "stepping",
+  "start": 16.877,
+  "end": 17.273
+ },
+ {
+  "word": "through",
+  "start": 17.317,
+  "end": 17.574
+ },
+ {
+  "word": "a",
+  "start": 17.603,
+  "end": 17.809
+ },
+ {
+  "word": "doorway",
+  "start": 17.832,
+  "end": 18.197
+ },
+ {
+  "word": "closes",
+  "start": 18.237,
+  "end": 18.613
+ },
+ {
+  "word": "the",
+  "start": 18.655,
+  "end": 18.881
+ },
+ {
+  "word": "file.",
+  "start": 18.906,
+  "end": 19.261
+ },
+ {
+  "word": "Ever",
+  "start": 19.651,
+  "end": 20.005
+ },
+ {
+  "word": "walk",
+  "start": 20.045,
+  "end": 20.282
+ },
+ {
+  "word": "into",
+  "start": 20.308,
+  "end": 20.663
+ },
+ {
+  "word": "the",
+  "start": 20.702,
+  "end": 20.929
+ },
+ {
+  "word": "kitchen",
+  "start": 20.954,
+  "end": 21.339
+ },
+ {
+  "word": "and",
+  "start": 21.382,
+  "end": 21.609
+ },
+ {
+  "word": "forget",
+  "start": 21.634,
+  "end": 22.009
+ },
+ {
+  "word": "why?",
+  "start": 22.051,
+  "end": 22.277
+ },
+ {
+  "word": "Researchers",
+  "start": 22.653,
+  "end": 23.187
+ },
+ {
+  "word": "at",
+  "start": 23.247,
+  "end": 23.463
+ },
+ {
+  "word": "Notre",
+  "start": 23.487,
+  "end": 23.724
+ },
+ {
+  "word": "Dame",
+  "start": 23.75,
+  "end": 23.976
+ },
+ {
+  "word": "found",
+  "start": 24.001,
+  "end": 24.238
+ },
+ {
+  "word": "people",
+  "start": 24.264,
+  "end": 24.63
+ },
+ {
+  "word": "forgot",
+  "start": 24.67,
+  "end": 25.046
+ },
+ {
+  "word": "more",
+  "start": 25.087,
+  "end": 25.314
+ },
+ {
+  "word": "after",
+  "start": 25.339,
+  "end": 25.704
+ },
+ {
+  "word": "passing",
+  "start": 25.745,
+  "end": 26.13
+ },
+ {
+  "word": "through",
+  "start": 26.173,
+  "end": 26.43
+ },
+ {
+  "word": "a",
+  "start": 26.459,
+  "end": 26.665
+ },
+ {
+  "word": "doorway",
+  "start": 26.688,
+  "end": 27.053
+ },
+ {
+  "word": "than",
+  "start": 27.093,
+  "end": 27.33
+ },
+ {
+  "word": "after",
+  "start": 27.356,
+  "end": 27.722
+ },
+ {
+  "word": "walking",
+  "start": 27.762,
+  "end": 28.148
+ },
+ {
+  "word": "the",
+  "start": 28.191,
+  "end": 28.417
+ },
+ {
+  "word": "same",
+  "start": 28.442,
+  "end": 28.669
+ },
+ {
+  "word": "distance",
+  "start": 28.694,
+  "end": 29.08
+ },
+ {
+  "word": "inside",
+  "start": 29.122,
+  "end": 29.488
+ },
+ {
+  "word": "one",
+  "start": 29.528,
+  "end": 29.744
+ },
+ {
+  "word": "room.",
+  "start": 29.768,
+  "end": 29.995
+ },
+ {
+  "word": "It's",
+  "start": 30.37,
+  "end": 30.596
+ },
+ {
+  "word": "called",
+  "start": 30.621,
+  "end": 30.868
+ },
+ {
+  "word": "the",
+  "start": 30.896,
+  "end": 31.122
+ },
+ {
+  "word": "doorway",
+  "start": 31.147,
+  "end": 31.512
+ },
+ {
+  "word": "effect.",
+  "start": 31.553,
+  "end": 31.928
+ },
+ {
+  "word": "Your",
+  "start": 32.32,
+  "end": 32.536
+ },
+ {
+  "word": "brain",
+  "start": 32.56,
+  "end": 32.797
+ },
+ {
+  "word": "thinks",
+  "start": 32.823,
+  "end": 33.08
+ },
+ {
+  "word": "a",
+  "start": 33.109,
+  "end": 33.315
+ },
+ {
+  "word": "new",
+  "start": 33.337,
+  "end": 33.564
+ },
+ {
+  "word": "scene",
+  "start": 33.589,
+  "end": 33.826
+ },
+ {
+  "word": "means",
+  "start": 33.852,
+  "end": 34.088
+ },
+ {
+  "word": "a",
+  "start": 34.115,
+  "end": 34.321
+ },
+ {
+  "word": "new",
+  "start": 34.343,
+  "end": 34.57
+ },
+ {
+  "word": "chapter.",
+  "start": 34.595,
+  "end": 34.981
+ },
+ {
+  "word": "So",
+  "start": 35.374,
+  "end": 35.59
+ },
+ {
+  "word": "next",
+  "start": 35.614,
+  "end": 35.85
+ },
+ {
+  "word": "time,",
+  "start": 35.877,
+  "end": 36.103
+ },
+ {
+  "word": "don't",
+  "start": 36.278,
+  "end": 36.515
+ },
+ {
+  "word": "stand",
+  "start": 36.541,
+  "end": 36.788
+ },
+ {
+  "word": "there.",
+  "start": 36.815,
+  "end": 37.052
+ },
+ {
+  "word": "Walk",
+  "start": 37.428,
+  "end": 37.665
+ },
+ {
+  "word": "back",
+  "start": 37.691,
+  "end": 37.928
+ },
+ {
+  "word": "to",
+  "start": 37.954,
+  "end": 38.17
+ },
+ {
+  "word": "where",
+  "start": 38.194,
+  "end": 38.431
+ },
+ {
+  "word": "the",
+  "start": 38.457,
+  "end": 38.683
+ },
+ {
+  "word": "thought",
+  "start": 38.708,
+  "end": 38.966
+ },
+ {
+  "word": "began.",
+  "start": 38.994,
+  "end": 39.359
+ }
+]

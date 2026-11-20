@@ -323,4 +323,98 @@ def diner(mood):
     ], dict(ground_y=1420)
 
 
-REGISTRY = {'study': study, 'rooftop': rooftop, 'diner': diner}
+# =============================================================================== HOME KITCHEN
+def home_kitchen(mood):
+    m = MOODS[mood]
+    night = mood in NIGHT
+    E = []
+    back = (-40, 250, 1120, 1250)
+
+    def room(cv):
+        tile = tx.checker_tiles(1200, 700, size=70, c1='#f4f0e8', c2='#ece6da', gloss=True)
+        room_box(cv, back, back_tex=tx.wallpaper(1200, 1000, base='#e8dcc0', motif='#d8c9a4', stripe='#e2d4b4', step=70),
+                 left_tex=tx.wallpaper(1200, 1600, base='#dccfae', motif='#cdbe98', stripe='#d6c8a6', step=70),
+                 right_tex=tx.wallpaper(1200, 1600, base='#dccfae', motif='#cdbe98', stripe='#d6c8a6', step=70),
+                 floor_tex=tx.checker_tiles(1400, 1400, size=190, c1='#2f5a5e', c2='#e8e1d4', gloss=True),
+                 ceil_tex=tx.ceiling_tiles(1400, 1200, size=170), right_shade=0.2, left_shade=0.1)
+        # subway-tile backsplash band
+        cv.drawImageRect(tile, skia.Rect.MakeLTRB(back[0], 860, back[2], 1100))
+        cv.drawLine(back[0], 860, back[2], 860, ink(3.5))
+        # upper cabinets (teal) with brass knobs
+        for k in range(3):
+            x = 380 + k * 250
+            cv.drawPath(rrect(x, 300, 230, 330, 10), fill('#2f6a6e')); cv.drawPath(rrect(x, 300, 230, 330, 10), ink(4.5))
+            cv.drawPath(rrect(x + 22, 324, 186, 282, 6), stroke(shade('#2f6a6e', -0.35), 4))
+            cv.drawCircle(x + 190, 560, 9, fill('#e6c25a')); cv.drawCircle(x + 190, 560, 9, ink(2.5))
+        # window with a dusk sky left of the cabinets
+        wx, wy, ww, wh = 60, 380, 250, 380
+        sv = surface(ww, wh); sc = sv.getCanvas()
+        sk.sky(sc, m, x0=0, y0=0, x1=ww, y1=wh, clouds=2, seed=22, cloud_band=(30, 140), cloud_scale=0.4,
+               stars=26 if night else 0, moon=(180, 80, 20) if night else None)
+        sc.drawRect(skia.Rect.MakeXYWH(0, wh - 90, ww, 90), fill('#3a4678'))
+        cv.drawImage(sv.makeImageSnapshot(), wx, wy)
+        cv.drawRect(skia.Rect.MakeXYWH(wx + ww / 2 - 5, wy, 10, wh), fill('#f4f0e8'))
+        cv.drawRect(skia.Rect.MakeXYWH(wx, wy + wh / 2 - 5, ww, 10), fill('#f4f0e8'))
+        cv.drawRect(skia.Rect.MakeXYWH(wx - 10, wy - 10, ww + 20, wh + 20), stroke('#f4f0e8', 16))
+        cv.drawRect(skia.Rect.MakeXYWH(wx - 18, wy - 18, ww + 36, wh + 36), ink(3.5))
+        # crimson tea towel on a rail under the window
+        cv.drawLine(wx - 10, wy + wh + 40, wx + ww + 10, wy + wh + 40, stroke('#8a8a9e', 6))
+        tw = path_poly([(wx + 90, wy + wh + 40), (wx + 190, wy + wh + 40), (wx + 184, wy + wh + 150), (wx + 96, wy + wh + 150)])
+        cv.drawPath(tw, fill(BRAND_RED)); cv.drawPath(tw, ink(3.5))
+        for k in range(3):
+            cv.drawLine(wx + 100, wy + wh + 70 + k * 26, wx + 182, wy + wh + 70 + k * 26, stroke(shade(BRAND_RED, 0.4), 3))
+        # fridge at the far right
+        cv.drawPath(rrect(900, 560, 200, 700, 16), fill('#dfe6ea')); cv.drawPath(rrect(900, 560, 200, 700, 16), ink(4.5))
+        cv.drawLine(900, 860, 1100, 860, ink(3.5))
+        for yy in (700, 900):
+            cv.drawPath(rrect(1060, yy, 12, 90, 6), fill('#8a8a9e'))
+        for k, (nx, ny, nc) in enumerate(((930, 600, '#f6e27a'), (1000, 640, BRAND_RED), (944, 700, '#a8d8f0'))):
+            cv.drawRect(skia.Rect.MakeXYWH(nx, ny, 46, 40), fill(nc)); cv.drawRect(skia.Rect.MakeXYWH(nx, ny, 46, 40), ink(2.4))
+        # pendant lamp (practical)
+        cv.drawLine(560, 240, 560, 360, stroke('#2a2232', 5))
+        lp = path_poly([(500, 420), (620, 420), (596, 356), (524, 356)])
+        cv.drawPath(lp, fill(BRAND_RED)); cv.drawPath(lp, ink(4))
+        cv.drawPath(ellipse(560, 421, 60, 9), fill('#f8ecc0'))
+        E.append(dict(kind='lamp', pos=(560, 428), r=380, lit=True, ground=None))
+
+    def counter(cv):
+        top = 1430
+        draw_tex_quad(cv, tx.wood_planks(2000, 500, plank=150, base='#c8a066', seed=12, nails=False),
+                      [(-100, 1300), (1180, 1300), (1420, top), (-340, top)])
+        cv.drawLine(-340, top, 1420, top, ink(4.5))
+        cv.drawRect(skia.Rect.MakeLTRB(-340, top, 1420, top + 30), fill('#a8844e')); cv.drawLine(-340, top + 30, 1420, top + 30, ink(4))
+        cv.drawRect(skia.Rect.MakeLTRB(-340, top + 30, 1420, 2200), fill('#2f6a6e'))
+        for k in range(4):
+            x = -300 + k * 420
+            cv.drawPath(rrect(x, top + 90, 360, 400, 14), stroke(shade('#2f6a6e', -0.35), 6))
+            cv.drawCircle(x + 320, top + 120, 11, fill('#e6c25a')); cv.drawCircle(x + 320, top + 120, 11, ink(3))
+        # kettle (crimson), toaster, fruit bowl, mug, jar
+        cv.drawPath(path_smooth([(140, 1420), (130, 1340), (190, 1290), (250, 1340), (240, 1420)]), fill(BRAND_RED))
+        cv.drawPath(path_smooth([(140, 1420), (130, 1340), (190, 1290), (250, 1340), (240, 1420)]), ink(4))
+        cv.drawPath(path_smooth([(130, 1360), (80, 1330), (96, 1316)], close=False), stroke('#2a2232', 8))
+        cv.drawPath(path_smooth([(240, 1340), (290, 1350), (290, 1390)], close=False), stroke('#2a2232', 8))
+        cv.drawPath(rrect(560, 1350, 150, 76, 14), fill('#cfd2da')); cv.drawPath(rrect(560, 1350, 150, 76, 14), ink(4))
+        cv.drawRect(skia.Rect.MakeXYWH(586, 1344, 40, 8), fill('#2a2232')); cv.drawRect(skia.Rect.MakeXYWH(646, 1344, 40, 8), fill('#2a2232'))
+        cv.drawPath(path_smooth([(790, 1390), (800, 1424), (940, 1424), (950, 1390)]), fill('#c8a048'))
+        cv.drawPath(path_smooth([(790, 1390), (800, 1424), (940, 1424), (950, 1390)]), ink(4))
+        for k, (fx, fy, fc) in enumerate(((820, 1370, '#e8503a'), (870, 1358, '#f2c640'), (910, 1372, '#6ab04a'))):
+            cv.drawCircle(fx, fy, 24, fill(fc)); cv.drawCircle(fx, fy, 24, ink(3))
+        cv.drawPath(rrect(1010, 1370, 60, 56, 8), fill('#f4f0e8')); cv.drawPath(rrect(1010, 1370, 60, 56, 8), ink(3.5))
+        # a key on the counter edge (the thing he forgot)
+        cv.drawCircle(1120, 1412, 12, stroke('#e6c25a', 5)); cv.drawLine(1130, 1412, 1170, 1412, stroke('#e6c25a', 5))
+
+    def near(cv):
+        cv.drawPath(path_smooth([(-100, 2150), (-60, 1850), (160, 1800), (240, 2150)]), fill('#1f2a2e'))
+        cv.drawPath(rrect(960, 1900, 260, 300, 24), fill('#c8a048'))
+
+    def lights(cv, mm):
+        sk.draw_emitters(cv, [e for e in E if e['kind'] == 'lamp'], mm, True)
+
+    return [
+        ('room', 1.5, room, dict(lights=lights)),
+        ('counter', 1.0, counter, dict()),
+        ('near', 0.58, near, dict(blur=12)),
+    ], dict(ground_y=1430, key=(1145, 1412))
+
+
+REGISTRY = {'home_kitchen': home_kitchen, 'study': study, 'rooftop': rooftop, 'diner': diner}
