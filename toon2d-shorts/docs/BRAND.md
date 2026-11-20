@@ -15,7 +15,7 @@ Montserrat ExtraBold (OFL), lowercase, 1-2 words, `toon2d/text.py`.
 | `study` | teal wallpaper, bookshelf, red-string evidence board, window onto the city, banker's lamp (glows at night) | y 1500-1700, z 1.0 (desk hides the legs when y < 1700) |
 | `rooftop` | layered city skyline, red beacon tower, water tower, vents, access door lamp, gravel roof, parapet | y 1600-1800, z 1.0 |
 | `diner` | neon OPEN window, menu board, red booths, pie case, counter with stools | y 1500-1700, z 1.0 |
-| `home_kitchen` | cream wallpaper, white tile backsplash, teal cabinets, window, fridge with notes, crimson pendant lamp, counter with crimson kettle, toaster, fruit bowl and a key | y 1500-1700, z 1.0 |
+| `home_kitchen` | cream wallpaper, white tile backsplash, teal cabinets, window, fridge with notes, crimson pendant lamp, worktop run on the back wall (kettle, toaster, fruit bowl, a key); checker floor in front | y 1450-1650, z 1.0 (feet on the floor) |
 
 Suggested light per set: `study` night (tension) or dawn (ending), `home_kitchen` interior (or golden for the explanation), `diner` golden (explanation), `rooftop` sunset (name of the effect).
 To add a set: write `def myset(mood): return [(name, plane_z, painter, opts), ...], meta` in `brandsets.py` and add it to

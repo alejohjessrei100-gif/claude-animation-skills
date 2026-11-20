@@ -338,8 +338,8 @@ def home_kitchen(mood):
                  floor_tex=tx.checker_tiles(1400, 1400, size=190, c1='#2f5a5e', c2='#e8e1d4', gloss=True),
                  ceil_tex=tx.ceiling_tiles(1400, 1200, size=170), right_shade=0.2, left_shade=0.1)
         # subway-tile backsplash band
-        cv.drawImageRect(tile, skia.Rect.MakeLTRB(back[0], 860, back[2], 1100))
-        cv.drawLine(back[0], 860, back[2], 860, ink(3.5))
+        cv.drawImageRect(tile, skia.Rect.MakeLTRB(back[0], 700, back[2], 915))
+        cv.drawLine(back[0], 700, back[2], 700, ink(3.5))
         # upper cabinets (teal) with brass knobs
         for k in range(3):
             x = 380 + k * 250
@@ -370,6 +370,7 @@ def home_kitchen(mood):
             cv.drawPath(rrect(1060, yy, 12, 90, 6), fill('#8a8a9e'))
         for k, (nx, ny, nc) in enumerate(((930, 600, '#f6e27a'), (1000, 640, BRAND_RED), (944, 700, '#a8d8f0'))):
             cv.drawRect(skia.Rect.MakeXYWH(nx, ny, 46, 40), fill(nc)); cv.drawRect(skia.Rect.MakeXYWH(nx, ny, 46, 40), ink(2.4))
+        counter(cv)
         # pendant lamp (practical)
         cv.drawLine(560, 240, 560, 360, stroke('#2a2232', 5))
         lp = path_poly([(500, 420), (620, 420), (596, 356), (524, 356)])
@@ -378,30 +379,31 @@ def home_kitchen(mood):
         E.append(dict(kind='lamp', pos=(560, 428), r=380, lit=True, ground=None))
 
     def counter(cv):
-        top = 1430
-        draw_tex_quad(cv, tx.wood_planks(2000, 500, plank=150, base='#c8a066', seed=12, nails=False),
-                      [(-100, 1300), (1180, 1300), (1420, top), (-340, top)])
-        cv.drawLine(-340, top, 1420, top, ink(4.5))
-        cv.drawRect(skia.Rect.MakeLTRB(-340, top, 1420, top + 30), fill('#a8844e')); cv.drawLine(-340, top + 30, 1420, top + 30, ink(4))
-        cv.drawRect(skia.Rect.MakeLTRB(-340, top + 30, 1420, 2200), fill('#2f6a6e'))
+        # base-cabinet run along the back wall: worktop at ~half a person's height, floor stays free in front
+        top, bot = 935, 1250
+        cv.drawRect(skia.Rect.MakeLTRB(back[0], top, 900, bot), fill('#2f6a6e'))
+        cv.drawRect(skia.Rect.MakeLTRB(back[0], top, 900, bot), ink(4.5))
         for k in range(4):
-            x = -300 + k * 420
-            cv.drawPath(rrect(x, top + 90, 360, 400, 14), stroke(shade('#2f6a6e', -0.35), 6))
-            cv.drawCircle(x + 320, top + 120, 11, fill('#e6c25a')); cv.drawCircle(x + 320, top + 120, 11, ink(3))
-        # kettle (crimson), toaster, fruit bowl, mug, jar
-        cv.drawPath(path_smooth([(140, 1420), (130, 1340), (190, 1290), (250, 1340), (240, 1420)]), fill(BRAND_RED))
-        cv.drawPath(path_smooth([(140, 1420), (130, 1340), (190, 1290), (250, 1340), (240, 1420)]), ink(4))
-        cv.drawPath(path_smooth([(130, 1360), (80, 1330), (96, 1316)], close=False), stroke('#2a2232', 8))
-        cv.drawPath(path_smooth([(240, 1340), (290, 1350), (290, 1390)], close=False), stroke('#2a2232', 8))
-        cv.drawPath(rrect(560, 1350, 150, 76, 14), fill('#cfd2da')); cv.drawPath(rrect(560, 1350, 150, 76, 14), ink(4))
-        cv.drawRect(skia.Rect.MakeXYWH(586, 1344, 40, 8), fill('#2a2232')); cv.drawRect(skia.Rect.MakeXYWH(646, 1344, 40, 8), fill('#2a2232'))
-        cv.drawPath(path_smooth([(790, 1390), (800, 1424), (940, 1424), (950, 1390)]), fill('#c8a048'))
-        cv.drawPath(path_smooth([(790, 1390), (800, 1424), (940, 1424), (950, 1390)]), ink(4))
-        for k, (fx, fy, fc) in enumerate(((820, 1370, '#e8503a'), (870, 1358, '#f2c640'), (910, 1372, '#6ab04a'))):
-            cv.drawCircle(fx, fy, 24, fill(fc)); cv.drawCircle(fx, fy, 24, ink(3))
-        cv.drawPath(rrect(1010, 1370, 60, 56, 8), fill('#f4f0e8')); cv.drawPath(rrect(1010, 1370, 60, 56, 8), ink(3.5))
-        # a key on the counter edge (the thing he forgot)
-        cv.drawCircle(1120, 1412, 12, stroke('#e6c25a', 5)); cv.drawLine(1130, 1412, 1170, 1412, stroke('#e6c25a', 5))
+            x = -10 + k * 230
+            cv.drawPath(rrect(x, top + 40, 200, 230, 8), stroke(shade('#2f6a6e', -0.35), 5))
+            cv.drawCircle(x + 170, top + 64, 8, fill('#e6c25a')); cv.drawCircle(x + 170, top + 64, 8, ink(2.5))
+        cv.drawRect(skia.Rect.MakeLTRB(back[0] - 10, top - 20, 910, top), fill('#c8a066'))
+        cv.drawRect(skia.Rect.MakeLTRB(back[0] - 10, top - 20, 910, top), ink(4.5))
+        cv.drawRect(skia.Rect.MakeLTRB(back[0], bot - 22, 900, bot), fill('#1f2a2e'))
+        # crimson kettle, toaster, fruit bowl, mug, and the key on the worktop
+        t = top - 20
+        cv.drawPath(path_smooth([(330, t), (322, t - 56), (366, t - 92), (410, t - 56), (404, t)]), fill(BRAND_RED))
+        cv.drawPath(path_smooth([(330, t), (322, t - 56), (366, t - 92), (410, t - 56), (404, t)]), ink(3.5))
+        cv.drawPath(path_smooth([(322, t - 40), (290, t - 62), (300, t - 72)], close=False), stroke('#2a2232', 6))
+        cv.drawPath(path_smooth([(404, t - 56), (436, t - 52), (436, t - 24)], close=False), stroke('#2a2232', 6))
+        cv.drawPath(rrect(520, t - 52, 104, 52, 10), fill('#cfd2da')); cv.drawPath(rrect(520, t - 52, 104, 52, 10), ink(3.5))
+        cv.drawRect(skia.Rect.MakeXYWH(538, t - 58, 28, 6), fill('#2a2232')); cv.drawRect(skia.Rect.MakeXYWH(580, t - 58, 28, 6), fill('#2a2232'))
+        cv.drawPath(path_smooth([(680, t - 26), (688, t), (790, t), (798, t - 26)]), fill('#c8a048'))
+        cv.drawPath(path_smooth([(680, t - 26), (688, t), (790, t), (798, t - 26)]), ink(3.5))
+        for fx, fy, fc in ((704, t - 40, '#e8503a'), (740, t - 50, '#f2c640'), (772, t - 38, '#6ab04a')):
+            cv.drawCircle(fx, fy, 18, fill(fc)); cv.drawCircle(fx, fy, 18, ink(2.8))
+        cv.drawPath(rrect(840, t - 40, 40, 40, 6), fill('#f4f0e8')); cv.drawPath(rrect(840, t - 40, 40, 40, 6), ink(3))
+        cv.drawCircle(250, t - 8, 9, stroke('#e6c25a', 4)); cv.drawLine(259, t - 8, 290, t - 8, stroke('#e6c25a', 4))
 
     def near(cv):
         cv.drawPath(path_smooth([(-100, 2150), (-60, 1850), (160, 1800), (240, 2150)]), fill('#1f2a2e'))
@@ -412,9 +414,8 @@ def home_kitchen(mood):
 
     return [
         ('room', 1.5, room, dict(lights=lights)),
-        ('counter', 1.0, counter, dict()),
         ('near', 0.58, near, dict(blur=12)),
-    ], dict(ground_y=1430, key=(1145, 1412))
+    ], dict(ground_y=1560, key=(250, 907))
 
 
 REGISTRY = {'home_kitchen': home_kitchen, 'study': study, 'rooftop': rooftop, 'diner': diner}
